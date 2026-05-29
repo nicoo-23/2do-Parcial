@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+#include "Enemigo.h"
 #include "EnemigoFantasma.generated.h"
 
 UCLASS()
-class NAVESUSFX2026_API AEnemigoFantasma : public AActor
+class NAVESUSFX2026_API AEnemigoFantasma : public AEnemigo
 {
 	GENERATED_BODY()
 	
@@ -23,4 +23,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+	// Creador concreto: crea su propio ADisparoFantasma
+	virtual AActor* CrearDisparo() override;
 };

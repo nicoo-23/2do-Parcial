@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NavesUSFX2026.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F60D82A4-17A7-4318-A1DC-EDF60B00901C}</UniqueIdentifier>
+      <UniqueIdentifier>{1BBC6725-2FDD-4396-9241-4978A571B54B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NavesUSFX2026.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{ED728A29-B0E8-44A3-B116-13E26AAEE95A}</UniqueIdentifier>
+      <UniqueIdentifier>{6C61CEB3-65D3-48AE-9C52-DEE8DE3A1140}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,12 +32,54 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NavesUSFX2026">
-      <UniqueIdentifier>{666CBA7E-62A3-4CC6-937F-58CC54EF2897}</UniqueIdentifier>
+      <UniqueIdentifier>{AFC2398F-B855-4C62-AB7B-5FDD91F41042}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\Amigo.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\Amigo.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\AmigoArmado.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\AmigoArmado.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\AmigoBasico.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\AmigoBasico.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\AmigoSofisticado.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\AmigoSofisticado.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\NavesUSFX2026\Bloque.cpp">
       <Filter>Source\NavesUSFX2026</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NavesUSFX2026\Bloque.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\BloqueConcreto.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\BloqueConcreto.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\BloqueMadera.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\BloqueMadera.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\BloqueMetalico.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\BloqueMetalico.h">
       <Filter>Source\NavesUSFX2026</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NavesUSFX2026\Bonus.cpp">
@@ -46,16 +88,64 @@
     <ClInclude Include="..\..\Source\NavesUSFX2026\Bonus.h">
       <Filter>Source\NavesUSFX2026</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\BuilderPlataforma.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\BuilderPlataforma.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\Decorador.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\Decorador.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\DecoradorAmigo.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\DecoradorAmigo.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\DirectorPlataformas.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\DirectorPlataformas.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\NavesUSFX2026\Enemigo.cpp">
       <Filter>Source\NavesUSFX2026</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NavesUSFX2026\Enemigo.h">
       <Filter>Source\NavesUSFX2026</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\EnemigoAlienigena.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\EnemigoAlienigena.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\NavesUSFX2026\EnemigoAnimal.cpp">
       <Filter>Source\NavesUSFX2026</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NavesUSFX2026\EnemigoAnimal.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\EnemigoFantasma.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\EnemigoFantasma.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\FacadeEscenario.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\FacadeEscenario.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\FacadeNivel.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\FacadeNivel.h">
       <Filter>Source\NavesUSFX2026</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NavesUSFX2026\GeneradorLaberinto.cpp">
@@ -96,6 +186,36 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\NavesUSFX2026\ObstaculoEnemigo.h">
       <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\Pared.cpp">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\Pared.h">
+      <Filter>Source\NavesUSFX2026</Filter>
+    </ClInclude>
+    <Filter Include="Source\NavesUSFX2026\Private">
+      <UniqueIdentifier>{E88E7775-122B-4F6A-AF3C-7D3EEA9C2AC9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\Private\DisparoAlienigena.cpp">
+      <Filter>Source\NavesUSFX2026\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\Private\DisparoEnemigo.cpp">
+      <Filter>Source\NavesUSFX2026\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NavesUSFX2026\Private\DisparoFantasma.cpp">
+      <Filter>Source\NavesUSFX2026\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\NavesUSFX2026\Public">
+      <UniqueIdentifier>{50A8D2EE-5111-428C-A694-74F0FBB4AE03}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\Public\DisparoAlienigena.h">
+      <Filter>Source\NavesUSFX2026\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\Public\DisparoEnemigo.h">
+      <Filter>Source\NavesUSFX2026\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NavesUSFX2026\Public\DisparoFantasma.h">
+      <Filter>Source\NavesUSFX2026\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

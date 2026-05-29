@@ -36,3 +36,36 @@ void AEnemigo::Tick(float DeltaTime)
 
 }
 
+
+
+
+
+// =====================================================
+// FACTORY METHOD — implementacion base
+// =====================================================
+// Este metodo usa el Factory Method internamente.
+// El GameMode o el nivel solo llaman Disparar()
+// sin preocuparse del tipo concreto de disparo.
+void AEnemigo::Disparar()
+{
+    // Llama al Factory Method — polimorfismo en accion
+    AActor* NuevoDisparo = CrearDisparo();
+
+    if (NuevoDisparo != nullptr)
+    {
+        // Cast de AActor* a IDisparoEnemigo* para usar sus metodos
+        IDisparoEnemigo* DisparoInterface = Cast<IDisparoEnemigo>(NuevoDisparo);
+
+        if (DisparoInterface)
+        {
+            // Lanza el disparo desde la posicion del enemigo
+            FVector PosicionDisparo = GetActorLocation() + GetActorForwardVector() * 100.0f;
+            DisparoInterface->Lanzar(PosicionDisparo, GetActorRotation());
+
+            GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow,
+                FString::Printf(TEXT("Enemigo disparo: %s"),
+                    *DisparoInterface->ObtenerTipo()));
+        }
+    }
+}
+

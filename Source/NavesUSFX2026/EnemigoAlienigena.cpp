@@ -2,7 +2,7 @@
 
 
 #include "EnemigoAlienigena.h"
-
+#include "DisparoAlienigena.h"  //factory
 // Sets default values
 AEnemigoAlienigena::AEnemigoAlienigena()
 {
@@ -21,7 +21,22 @@ void AEnemigoAlienigena::BeginPlay()
 // Called every frame
 void AEnemigoAlienigena::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-
+    Super::Tick(DeltaTime);
 }
+// =====================================================
+// FACTORY METHOD — aqui esta la magia
+// Esta subclase decide QUE tipo de disparo spawnear.
+// Enemigo.cpp llama CrearDisparo() sin saber este tipo.
+// =====================================================
+    AActor* AEnemigoAlienigena::CrearDisparo()
+    {
+        UWorld* World = GetWorld();
+        if (!World) return nullptr;
 
+        ADisparoAlienigena* Disparo = World->SpawnActor<ADisparoAlienigena>(
+            ADisparoAlienigena::StaticClass(),
+            GetActorLocation(),
+            GetActorRotation()
+        );
+        return Disparo;
+    }

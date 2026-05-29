@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-
+#include "DisparoEnemigo.h"        // <-- incluimos la interfaz del producto
 #include "Enemigo.generated.h"
 
 class UStaticMeshComponent;;
@@ -35,4 +35,17 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+
+	// =====================================================
+	// FACTORY METHOD — el corazon del patron
+	// =====================================================
+	// Cada subclase de enemigo sobreescribe este metodo
+	// y decide QUE tipo de disparo crear.
+	// La clase base (AEnemigo) no sabe que tipo exacto es.
+	// =====================================================
+	virtual AActor* CrearDisparo() { return nullptr; }
+	// Metodo que USA el factory method internamente.
+	// El cliente llama Disparar() y no sabe nada del tipo concreto.
+	void Disparar();
 };

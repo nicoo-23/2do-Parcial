@@ -2,7 +2,7 @@
 
 
 #include "EnemigoFantasma.h"
-
+#include "DisparoFantasma.h"
 // Sets default values
 AEnemigoFantasma::AEnemigoFantasma()
 {
@@ -15,7 +15,7 @@ AEnemigoFantasma::AEnemigoFantasma()
 void AEnemigoFantasma::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	Disparar(); // Dispara al aparecer
 }
 
 // Called every frame
@@ -25,3 +25,17 @@ void AEnemigoFantasma::Tick(float DeltaTime)
 
 }
 
+// para factory
+AActor* AEnemigoFantasma::CrearDisparo()
+{
+	UWorld* World = GetWorld();
+	if (!World) return nullptr;
+
+	ADisparoFantasma* Disparo = World->SpawnActor<ADisparoFantasma>(
+		ADisparoFantasma::StaticClass(),
+		GetActorLocation(),
+		GetActorRotation()
+	);
+
+	return Disparo;
+}
